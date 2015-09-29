@@ -27,5 +27,8 @@
 - (instancetype)lr_resizedImageWithContentMode:(UIViewContentMode)contentMode bounds:(CGSize)bounds;
 - (instancetype)lr_decompressImage;
 - (BOOL)lr_hasAlpha;
-
+/*
+ * @see http://stackoverflow.com/questions/5427656/ios-uiimagepickercontroller-result-image-orientation-after-upload/5427890#5427890
+ */
+- (instancetype)fixOrientation;
 @end

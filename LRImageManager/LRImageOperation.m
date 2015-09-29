@@ -343,7 +343,7 @@ static NSTimeInterval const kImageRetryDelay = 2.5;
     UIImageOrientation orientation = [data lr_imageOrientation];
     if (orientation != UIImageOrientationUp)
     {
-        image = [UIImage imageWithCGImage:image.CGImage scale:image.scale orientation:orientation];
+        image = [image fixOrientation];
     }
     
     return image;
